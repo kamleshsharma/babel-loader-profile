@@ -1,4 +1,4 @@
-const { trackLogToWebpackCompilation, printResult } = require("./util");
+const { trackLogToWebpackCompilation } = require("./util");
 const constant = require("./constant");
 
 const store = {

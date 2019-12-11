@@ -27,7 +27,7 @@ function trackLogToWebpackCompilation(store) {
   this._compilation.logging.set(constant.LOADER_NAME, logEntries);
 }
 
-module.export = {
+module.exports = {
   printResult,
   trackLogToWebpackCompilation
 };
