@@ -1,0 +1,22 @@
+{
+  "name": "babel-loader-profile",
+  "version": "0.0.1",
+  "description": "Provides deep insight of plugins used by babel-loader",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamleshsharma/babel-loader-profile.git"
+  },
+  "author": "kamlesh sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamleshsharma/babel-loader-profile/issues"
+  },
+  "homepage": "https://github.com/kamleshsharma/babel-loader-profile#readme",
+  "peerDependencies": {
+    "babel-loader": "^8.0.6"
+  }
+}
