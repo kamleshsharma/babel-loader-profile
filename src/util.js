@@ -17,7 +17,7 @@ function trackLogToWebpackCompilation(store) {
     this._compilation.logging.set(constant.LOADER_NAME, logEntries);
   }
 
-  for (let key in pluginStore) {
+  for (let key in store) {
     logEntries.push({
       time: Date.now(),
       type: "info",

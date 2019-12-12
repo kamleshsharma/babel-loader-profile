@@ -99,14 +99,15 @@ module.exports = function(babel) {
 
     result(result) {
       if (!tapedToCompilation) {
-        this._compiler.done.tap(constant.LOADER_NAME, stats => {
+        tapedToCompilation = true;
+        this._compiler.hooks.done.tap(constant.LOADER_NAME, stats => {
           trackLogToWebpackCompilation.call(this, store, stats);
         });
       }
 
       if (
         this.remainingRequest &&
-        constant.EXCLUDE_REGX.filter(regx => this.remainingRequest.match(regx))
+        constant.EXCLUDE_REGX.filter(regx => this.remainingRequest.match(regx)).length
       ) {
         store.filesProcessedFromNodeModules.push(this.remainingRequest);
         store.totalFilesProcessedFromNodeModules =
